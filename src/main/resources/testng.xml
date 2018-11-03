@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Hub Spot Test Automation Suite" verbose="1" >
+ <test name="Hub Spot Regression Cases" >
+    <classes>
+      <class name="com.hubspot.qa.tests.LoginTest"/>
+      <class name="com.hubspot.qa.tests.ContactsPageTest"/>
+      <class name="com.hubspot.qa.tests.HomePageTest"/>
+    </classes>
+ </test>
+</suite>

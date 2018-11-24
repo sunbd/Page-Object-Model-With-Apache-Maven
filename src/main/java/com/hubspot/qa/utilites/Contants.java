@@ -6,7 +6,7 @@ public class Contants {
 	public static int IMPLICIT_WAIT =20;
 	
 	public static String LOGIN_PAGE_TITLE = "HubSpot Login";
-	public static String HOME_PAGE_HEADER = "Sales Dashboard";
-	public static String HOME_PAGE_TITLE = "Reports dashboard";
+	public static String HOME_PAGE_HEADER = "Getting started with HubSpot";
+	public static String HOME_PAGE_TITLE = "Getting Started | HubSpot";
 
 }

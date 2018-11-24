@@ -24,8 +24,14 @@ public class HomePage extends BasePage  {
 	@FindBy(id = "nav-secondary-contacts")
 	WebElement contactsLink;
 	
+	@FindBy(id = "nav-primary-sales-branch")
+	WebElement salesTabLink;
 	
-	By homePageHeader = By.xpath("//h1[text()='Sales Dashboard']");
+	@FindBy(id = "nav-secondary-deals")
+	WebElement dealsLink;
+	
+	
+	By homePageHeader = By.xpath("//h1");
 	
 	By accountName = By.xpath("//span[@class='account-name ']");
 	
@@ -70,5 +76,19 @@ public class HomePage extends BasePage  {
 		return new ContactsPage(driver);
 		
 	}
-
+	
+	public void clickSales(){
+		WebDriverWait wait = new WebDriverWait(driver,15);
+		wait.until(ExpectedConditions.visibilityOf(salesTabLink));
+		salesTabLink.click();
+		
+		wait.until(ExpectedConditions.visibilityOf(dealsLink));
+		dealsLink.click();
+	}
+	
+	
+	public SalesPage goToSalesPage(){
+		clickSales();
+		return new SalesPage(driver);
+	}
 }

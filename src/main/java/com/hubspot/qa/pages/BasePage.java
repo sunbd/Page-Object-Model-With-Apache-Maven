@@ -7,13 +7,17 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import com.hubspot.qa.eventlistener.WebEventListener;
 import com.hubspot.qa.utilites.Contants;
 
 public class BasePage {
 	
 	public WebDriver driver;
 	public Properties prop;
+	public WebEventListener webEventListener;
+	public EventFiringWebDriver eventListener;
 	
 	public WebDriver init(){
 		
@@ -23,6 +27,11 @@ public class BasePage {
 		//driver.manage().timeouts().implicitlyWait(Contants.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().fullscreen();
+		
+		webEventListener = new WebEventListener();
+		eventListener = new EventFiringWebDriver(driver);
+		eventListener.register(webEventListener);
+		driver = eventListener;
 		
 		return driver;
 		

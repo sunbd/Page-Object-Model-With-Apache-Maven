@@ -2,36 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13829" started-at="2018-11-02T10:48:44Z" finished-at="2018-11-02T10:48:58Z">
+  <suite name="Default suite" duration-ms="37709" started-at="2018-11-21T05:46:23Z" finished-at="2018-11-21T05:47:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13829" started-at="2018-11-02T10:48:44Z" finished-at="2018-11-02T10:48:58Z">
-      <class name="com.hubspot.qa.tests.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.hubspot.qa.tests.LoginTest@26653222]" name="setup" is-config="true" duration-ms="6090" started-at="2018-11-02T10:48:44Z" finished-at="2018-11-02T10:48:50Z">
+    <test name="Default test" duration-ms="37709" started-at="2018-11-21T05:46:23Z" finished-at="2018-11-21T05:47:01Z">
+      <class name="com.hubspot.qa.tests.SalesPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hubspot.qa.tests.SalesPageTest@604ed9f0]" name="setUp" is-config="true" duration-ms="13246" started-at="2018-11-21T05:46:24Z" finished-at="2018-11-21T05:46:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.hubspot.qa.tests.LoginTest@26653222]" name="verifyLoginPageTitleTest" duration-ms="18" started-at="2018-11-02T10:48:50Z" finished-at="2018-11-02T10:48:50Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createDealsTest(java.lang.String, java.lang.String)[pri:0, instance:com.hubspot.qa.tests.SalesPageTest@604ed9f0]" name="createDealsTest" duration-ms="4959" started-at="2018-11-21T05:46:37Z" data-provider="getSalesTestData" finished-at="2018-11-21T05:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fryday sale]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hubspot.qa.tests.LoginTest@26653222]" name="tearDown" is-config="true" duration-ms="732" started-at="2018-11-02T10:48:50Z" finished-at="2018-11-02T10:48:51Z">
+        </test-method> <!-- createDealsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hubspot.qa.tests.SalesPageTest@604ed9f0]" name="tearDown" is-config="true" duration-ms="979" started-at="2018-11-21T05:46:42Z" finished-at="2018-11-21T05:46:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.hubspot.qa.tests.LoginTest@26653222]" name="setup" is-config="true" duration-ms="5843" started-at="2018-11-02T10:48:51Z" finished-at="2018-11-02T10:48:57Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hubspot.qa.tests.SalesPageTest@604ed9f0]" name="setUp" is-config="true" duration-ms="12511" started-at="2018-11-21T05:46:43Z" finished-at="2018-11-21T05:46:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.hubspot.qa.tests.LoginTest@26653222]" name="loginTest" duration-ms="386" started-at="2018-11-02T10:48:57Z" finished-at="2018-11-02T10:48:57Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createDealsTest(java.lang.String, java.lang.String)[pri:0, instance:com.hubspot.qa.tests.SalesPageTest@604ed9f0]" name="createDealsTest" duration-ms="4472" started-at="2018-11-21T05:46:56Z" data-provider="getSalesTestData" finished-at="2018-11-21T05:47:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Monday sale]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hubspot.qa.tests.LoginTest@26653222]" name="tearDown" is-config="true" duration-ms="719" started-at="2018-11-02T10:48:57Z" finished-at="2018-11-02T10:48:58Z">
+        </test-method> <!-- createDealsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hubspot.qa.tests.SalesPageTest@604ed9f0]" name="tearDown" is-config="true" duration-ms="882" started-at="2018-11-21T05:47:00Z" finished-at="2018-11-21T05:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.hubspot.qa.tests.LoginTest -->
+      </class> <!-- com.hubspot.qa.tests.SalesPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

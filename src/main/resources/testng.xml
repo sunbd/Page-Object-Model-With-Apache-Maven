@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Hub Spot Test Automation Suite" verbose="1" >
+<suite name="Hub Spot Test Automation Suite" parallel = "methods" thread-count="3" > 
+ 
+ <listeners>
+		<listener
+			class-name="com.hubspot.qa.ExtentReporterListner.ExtentReporterNG" />
+	</listeners>
+ 
  <test name="Hub Spot Regression Cases" >
     <classes>
       <class name="com.hubspot.qa.tests.LoginTest"/>

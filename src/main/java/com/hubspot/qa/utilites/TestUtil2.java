@@ -15,13 +15,13 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.hubspot.qa.pages.BasePage;
 
-public class TestUtil extends BasePage{
+public class TestUtil2 extends BasePage{
 
 	public static Workbook book;
 	
 	public static Sheet sheet;
 	
-	public static String TESTDATA_SHEET_PATH = "C:\\Automation\\workspace\\NaveenPOMSession\\src\\main\\java\\com\\hubspot\\qa\\testdata\\HubSpotTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "C:\\Automation\\workspace\\NaveenPOMSession\\src\\main\\java\\com\\hubspot\\qa\\testdata\\HubSpotDeal.xlsx";
 	
 
 	public static Object[][] getTestData(String sheetName) {

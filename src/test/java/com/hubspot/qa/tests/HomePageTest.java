@@ -36,6 +36,7 @@ public class HomePageTest {
 	
 	@Test(priority=1)
 	public void homePageHeaderTest(){
+		System.out.println(homePage.checkhomePageHeader());
 		Assert.assertEquals(homePage.checkhomePageHeader(),Contants.HOME_PAGE_HEADER);
 	}
 	
